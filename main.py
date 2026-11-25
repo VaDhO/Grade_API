@@ -22,17 +22,17 @@ CONFIG = {
     "client": "Skillfactory",
     "client_key": "M2MGWS",
     "start_date": "2026-06-01 00:00:00.000000",
-    "end_date": "2026-06-01 23:59:59.999999",  # Актуальные данные только до этой даты
+    "end_date": "2026-06-01 23:59:59.999999",
 
-    # Параметры вашей локальной БД PostgreSQL
+    # Параметры локальной БД PostgreSQL
     "db_host": "localhost",
     "db_port": "5432",
-    "db_name": "Grade_database",  # Замените на имя вашей БД
-    "db_user": "app_py_user",  # Замените на пользователя (например, postgres)
-    "db_password": "1111",  # Замените на пароль
+    "db_name": "Grade_database",
+    "db_user": "app_py_user",
+    "db_password": "1111",
 
 
-    # Google Sheets (Задание со звездочкой №1)
+    # Google Sheets
     "gs_credentials_file": "credentials.json",  # Файл ключа должен лежать рядом со скриптом
     "gs_spreadsheet_url": "https://docs.google.com/spreadsheets/d/1Zty6sjiRVImfpS9sDu0knrV5En_afKATG-I08Mbz8JU/edit?gid=0#gid=0/edit",  # Вставь свою ссылку
 }
