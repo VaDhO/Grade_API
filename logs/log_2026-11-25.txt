@@ -1,0 +1,266 @@
+2026-11-25 13:13:57 | INFO | Логирование инициализировано. Старые логи (> 3 дней) удалены.
+2026-11-25 13:13:57 | INFO | === Запуск основного скрипта интеграции данных ===
+2026-11-25 13:13:57 | INFO | Подключение к PostgreSQL и проверка структуры таблицы...
+2026-11-25 13:13:57 | ERROR | Критическая ошибка при инициализации БД: ОШИБКА:  нет доступа к схеме public
+LINE 2:         CREATE TABLE IF NOT EXISTS grader_stats (
+                                           ^
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\универ\Grade_API\main.py", line 91, in init_db
+    cursor.execute(create_table_query)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InsufficientPrivilege: ОШИБКА:  нет доступа к схеме public
+LINE 2:         CREATE TABLE IF NOT EXISTS grader_stats (
+                                           ^
+
+2026-11-25 13:13:57 | CRITICAL | Критическая ошибка выполнения скрипта: ОШИБКА:  нет доступа к схеме public
+LINE 2:         CREATE TABLE IF NOT EXISTS grader_stats (
+                                           ^
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\универ\Grade_API\main.py", line 224, in <module>
+    conn = init_db()
+  File "C:\Users\User\Desktop\универ\Grade_API\main.py", line 91, in init_db
+    cursor.execute(create_table_query)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InsufficientPrivilege: ОШИБКА:  нет доступа к схеме public
+LINE 2:         CREATE TABLE IF NOT EXISTS grader_stats (
+                                           ^
+
+2026-11-25 13:15:27 | INFO | Логирование инициализировано. Старые логи (> 3 дней) удалены.
+2026-11-25 13:15:27 | INFO | === Запуск основного скрипта интеграции данных ===
+2026-11-25 13:15:27 | INFO | Подключение к PostgreSQL и проверка структуры таблицы...
+2026-11-25 13:15:27 | INFO | Таблица 'grader_stats' успешно проверена/создана.
+2026-11-25 13:15:27 | INFO | Начало скачивания данных с API...
+2026-11-25 13:15:27 | INFO | Скачивание завершено. Всего получено записей: 1
+2026-11-25 13:15:27 | ERROR | Ошибка парсинга записи #0: 'str' object has no attribute 'get'. Сырые данные: errors
+2026-11-25 13:15:27 | INFO | Обработка данных завершена. Валидных записей для загрузки: 0
+2026-11-25 13:15:27 | INFO | Нет валидных данных для загрузки в БД. Завершение.
+2026-11-25 13:15:27 | INFO | === Скрипт успешно завершил работу ===
+2026-11-25 13:15:27 | INFO | Соединение с базой данных закрыто.
+2026-11-25 13:19:40 | INFO | Логирование инициализировано. Старые логи (> 3 дней) удалены.
+2026-11-25 13:19:40 | INFO | === Запуск основного скрипта интеграции данных ===
+2026-11-25 13:19:40 | INFO | Подключение к PostgreSQL и проверка структуры таблицы...
+2026-11-25 13:19:40 | INFO | Таблица 'grader_stats' успешно проверена/создана.
+2026-11-25 13:19:40 | INFO | Начало скачивания данных с API...
+2026-11-25 13:19:41 | INFO | Скачивание завершено. Всего получено записей: 1
+2026-11-25 13:19:41 | ERROR | Ошибка парсинга записи #0: 'str' object has no attribute 'get'. Сырые данные: errors
+2026-11-25 13:19:41 | INFO | Обработка данных завершена. Валидных записей для загрузки: 0
+2026-11-25 13:19:41 | INFO | Нет валидных данных для загрузки в БД. Завершение.
+2026-11-25 13:19:41 | INFO | === Скрипт успешно завершил работу ===
+2026-11-25 13:19:41 | INFO | Соединение с базой данных закрыто.
+2026-11-25 13:24:00 | INFO | Логирование инициализировано. Старые логи (> 3 дней) удалены.
+2026-11-25 13:24:00 | INFO | === Запуск основного скрипта интеграции данных ===
+2026-11-25 13:24:00 | INFO | Подключение к PostgreSQL и проверка структуры таблицы...
+2026-11-25 13:24:00 | INFO | Таблица 'grader_stats' успешно проверена/создана.
+2026-11-25 13:24:00 | INFO | Начало скачивания данных с API...
+2026-11-25 13:24:30 | INFO | Скачивание завершено. Всего получено записей: 747
+2026-11-25 13:24:30 | INFO | Обработка данных завершена. Валидных записей для загрузки: 747
+2026-11-25 13:24:30 | INFO | Начало заполнения базы данных...
+2026-11-25 13:24:30 | INFO | Заполнение базы завершено. Успешно загружено записей: 747
+2026-11-25 13:24:30 | INFO | === Скрипт успешно завершил работу ===
+2026-11-25 13:24:30 | INFO | Соединение с базой данных закрыто.
+2026-11-25 13:48:51 | INFO | Логирование инициализировано. Старые логи (> 3 дней) удалены.
+2026-11-25 13:48:51 | INFO | === Запуск скрипта интеграции данных (с Google Sheets) ===
+2026-11-25 13:48:51 | INFO | Подключение к PostgreSQL и проверка структуры таблицы...
+2026-11-25 13:48:51 | INFO | Таблица 'grader_stats' успешно проверена/создана.
+2026-11-25 13:48:51 | INFO | Начало скачивания данных с API...
+2026-11-25 13:49:21 | ERROR | Ошибка доступа к API: HTTPSConnectionPool(host='api.itresume.ru', port=443): Read timed out. (read timeout=30)
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\универ\Grade_API\.venv\Lib\site-packages\urllib3\connectionpool.py", line 540, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\User\Desktop\универ\Grade_API\.venv\Lib\site-packages\urllib3\connection.py", line 638, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\универ\Grade_API\.venv\Lib\site-packages\requests\adapters.py", line 696, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\User\Desktop\универ\Grade_API\.venv\Lib\site-packages\urllib3\connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\User\Desktop\универ\Grade_API\.venv\Lib\site-packages\urllib3\util\retry.py", line 510, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\универ\Grade_API\.venv\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\User\Desktop\универ\Grade_API\.venv\Lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\User\Desktop\универ\Grade_API\.venv\Lib\site-packages\urllib3\connectionpool.py", line 542, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\универ\Grade_API\.venv\Lib\site-packages\urllib3\connectionpool.py", line 373, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.itresume.ru', port=443): Read timed out. (read timeout=30)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\универ\Grade_API\main.py", line 114, in fetch_and_parse_data
+    response = requests.get(CONFIG["api_url"], params=params, timeout=30)
+  File "C:\Users\User\Desktop\универ\Grade_API\.venv\Lib\site-packages\requests\api.py", line 87, in get
+    return request("get", url, params=params, **kwargs)
+  File "C:\Users\User\Desktop\универ\Grade_API\.venv\Lib\site-packages\requests\api.py", line 71, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\универ\Grade_API\.venv\Lib\site-packages\requests\sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\User\Desktop\универ\Grade_API\.venv\Lib\site-packages\requests\sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\User\Desktop\универ\Grade_API\.venv\Lib\site-packages\requests\adapters.py", line 742, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.itresume.ru', port=443): Read timed out. (read timeout=30)
+2026-11-25 13:49:21 | INFO | Нет валидных данных для загрузки в БД.
+2026-11-25 13:49:21 | WARNING | Нет данных для агрегации и выгрузки в Google Sheets.
+2026-11-25 13:49:21 | INFO | === Скрипт успешно завершил работу ===
+2026-11-25 13:49:21 | INFO | Соединение с базой данных закрыто.
+2026-11-25 13:49:51 | INFO | Логирование инициализировано. Старые логи (> 3 дней) удалены.
+2026-11-25 13:49:51 | INFO | === Запуск скрипта интеграции данных (с Google Sheets) ===
+2026-11-25 13:49:51 | INFO | Подключение к PostgreSQL и проверка структуры таблицы...
+2026-11-25 13:49:51 | INFO | Таблица 'grader_stats' успешно проверена/создана.
+2026-11-25 13:49:51 | INFO | Начало скачивания данных с API...
+2026-11-25 13:50:21 | ERROR | Ошибка доступа к API: HTTPSConnectionPool(host='api.itresume.ru', port=443): Read timed out. (read timeout=30)
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\универ\Grade_API\.venv\Lib\site-packages\urllib3\connectionpool.py", line 540, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\User\Desktop\универ\Grade_API\.venv\Lib\site-packages\urllib3\connection.py", line 638, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\универ\Grade_API\.venv\Lib\site-packages\requests\adapters.py", line 696, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\User\Desktop\универ\Grade_API\.venv\Lib\site-packages\urllib3\connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\User\Desktop\универ\Grade_API\.venv\Lib\site-packages\urllib3\util\retry.py", line 510, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\универ\Grade_API\.venv\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\User\Desktop\универ\Grade_API\.venv\Lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\User\Desktop\универ\Grade_API\.venv\Lib\site-packages\urllib3\connectionpool.py", line 542, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\универ\Grade_API\.venv\Lib\site-packages\urllib3\connectionpool.py", line 373, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.itresume.ru', port=443): Read timed out. (read timeout=30)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\универ\Grade_API\main.py", line 114, in fetch_and_parse_data
+    response = requests.get(CONFIG["api_url"], params=params, timeout=30)
+  File "C:\Users\User\Desktop\универ\Grade_API\.venv\Lib\site-packages\requests\api.py", line 87, in get
+    return request("get", url, params=params, **kwargs)
+  File "C:\Users\User\Desktop\универ\Grade_API\.venv\Lib\site-packages\requests\api.py", line 71, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\универ\Grade_API\.venv\Lib\site-packages\requests\sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\User\Desktop\универ\Grade_API\.venv\Lib\site-packages\requests\sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\User\Desktop\универ\Grade_API\.venv\Lib\site-packages\requests\adapters.py", line 742, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.itresume.ru', port=443): Read timed out. (read timeout=30)
+2026-11-25 13:50:21 | INFO | Нет валидных данных для загрузки в БД.
+2026-11-25 13:50:21 | WARNING | Нет данных для агрегации и выгрузки в Google Sheets.
+2026-11-25 13:50:21 | INFO | === Скрипт успешно завершил работу ===
+2026-11-25 13:50:21 | INFO | Соединение с базой данных закрыто.
+2026-11-25 13:50:39 | INFO | Логирование инициализировано. Старые логи (> 3 дней) удалены.
+2026-11-25 13:50:39 | INFO | === Запуск скрипта интеграции данных (с Google Sheets) ===
+2026-11-25 13:50:39 | INFO | Подключение к PostgreSQL и проверка структуры таблицы...
+2026-11-25 13:50:39 | INFO | Таблица 'grader_stats' успешно проверена/создана.
+2026-11-25 13:50:39 | INFO | Начало скачивания данных с API...
+2026-11-25 13:51:08 | INFO | Скачивание завершено. Всего получено записей: 747
+2026-11-25 13:51:08 | INFO | Обработка данных завершена. Валидных записей: 747
+2026-11-25 13:51:08 | INFO | Начало заполнения базы данных...
+2026-11-25 13:51:08 | INFO | Заполнение базы завершено. Успешно загружено записей: 747
+2026-11-25 13:51:08 | INFO | Начало агрегации данных и выгрузки в Google Sheets...
+2026-11-25 13:51:08 | ERROR | Ошибка при работе с Google Sheets: 
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\универ\Grade_API\main.py", line 244, in export_to_google_sheets
+    sheet = client.open_by_url(CONFIG["gs_spreadsheet_url"]).sheet1
+            ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\универ\Grade_API\.venv\Lib\site-packages\gspread\client.py", line 189, in open_by_url
+    return self.open_by_key(extract_id_from_url(url))
+                            ~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\User\Desktop\универ\Grade_API\.venv\Lib\site-packages\gspread\utils.py", line 622, in extract_id_from_url
+    raise NoValidUrlKeyFound
+gspread.exceptions.NoValidUrlKeyFound
+2026-11-25 13:51:08 | INFO | === Скрипт успешно завершил работу ===
+2026-11-25 13:51:08 | INFO | Соединение с базой данных закрыто.
+2026-11-25 13:52:04 | INFO | Логирование инициализировано. Старые логи (> 3 дней) удалены.
+2026-11-25 13:52:04 | INFO | === Запуск скрипта интеграции данных (с Google Sheets) ===
+2026-11-25 13:52:04 | INFO | Подключение к PostgreSQL и проверка структуры таблицы...
+2026-11-25 13:52:04 | INFO | Таблица 'grader_stats' успешно проверена/создана.
+2026-11-25 13:52:04 | INFO | Начало скачивания данных с API...
+2026-11-25 13:52:33 | INFO | Скачивание завершено. Всего получено записей: 747
+2026-11-25 13:52:33 | INFO | Обработка данных завершена. Валидных записей: 747
+2026-11-25 13:52:33 | INFO | Начало заполнения базы данных...
+2026-11-25 13:52:33 | INFO | Заполнение базы завершено. Успешно загружено записей: 747
+2026-11-25 13:52:33 | INFO | Начало агрегации данных и выгрузки в Google Sheets...
+2026-11-25 13:52:39 | INFO | Данные успешно агрегированы и добавлены в Google Sheets (1 строк).
+2026-11-25 13:52:39 | INFO | === Скрипт успешно завершил работу ===
+2026-11-25 13:52:39 | INFO | Соединение с базой данных закрыто.
